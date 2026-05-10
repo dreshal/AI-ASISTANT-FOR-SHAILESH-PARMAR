@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amit Thaker – MLA Vejalpur | Official AI Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- HERO BANNER -->
+  <div class="hero">
+    <div class="hero-flag">
+      <span class="f1"></span><span class="f2"></span><span class="f3"></span>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="mla-avatar">
+          <span>AT</span>
+          <div class="lotus-ring">🪷</div>
+        </div>
+        <div class="hero-text">
+          <div class="hero-gujarati">અમિત ઠાકર</div>
+          <div class="hero-name">Amit Thaker</div>
+          <div class="hero-role">Member of Legislative Assembly · Vejalpur</div>
+          <div class="hero-tags">
+            <span class="tag">BJP</span>
+            <span class="tag">42nd Constituency</span>
+            <span class="tag">Ahmedabad</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="stat-card"><div class="stat-n">2.19L</div><div class="stat-l">Twitter Followers</div></div>
+        <div class="stat-card"><div class="stat-n">1.56L</div><div class="stat-l">Facebook Likes</div></div>
+        <div class="stat-card"><div class="stat-n">2022</div><div class="stat-l">Elected MLA</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK TOPICS -->
+  <div class="topics-bar">
+    <button class="topic" onclick="quickTopic('Book an appointment with MLA')"><i class="ti ti-calendar-event"></i> Appointment</button>
+    <button class="topic" onclick="quickTopic('AMC complaint and services')"><i class="ti ti-building-community"></i> AMC Services</button>
+    <button class="topic" onclick="quickTopic('About Amit Thaker MLA')"><i class="ti ti-user-circle"></i> About MLA</button>
+    <button class="topic" onclick="quickTopic('Government schemes and benefits')"><i class="ti ti-star"></i> Gov. Schemes</button>
+    <button class="topic" onclick="quickTopic('Constituency development work')"><i class="ti ti-tool"></i> Dev. Work</button>
+    <button class="topic" onclick="quickTopic('Contact the office')"><i class="ti ti-phone"></i> Contact</button>
+  </div>
+
+  <!-- CHAT WINDOW -->
+  <div class="chat-wrap">
+    <div class="chat-header">
+      <div class="ch-av">AT</div>
+      <div class="ch-info">
+        <div class="ch-name">Amit Thaker AI Assistant</div>
+        <div class="ch-sub"><span class="online-dot"></span> Online · Replies instantly</div>
+      </div>
+      <div class="ch-bjp"><img src="bjp-logo.svg" alt="BJP" class="bjp-logo" onerror="this.style.display='none'"/>
+        <span>BJP Gujarat</span>
+      </div>
+    </div>
+
+    <div class="messages" id="msgs"></div>
+
+    <div class="chat-footer">
+      <input type="text" id="inp" placeholder="અહીં લખો · Type in English or Gujarati..." autocomplete="off"/>
+      <button class="send-btn" onclick="handleSend()" aria-label="Send message">
+        <i class="ti ti-send"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="page-footer">
+    <span>🪷 Official Digital Platform of Shri Amit Thaker, MLA Vejalpur</span>
+    <span>·</span>
+    <a href="https://amitthaker.com" target="_blank">amitthaker.com</a>
+    <span>·</span>
+    <a href="https://twitter.com/AmitThakerBJP" target="_blank">@AmitThakerBJP</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
